@@ -1,14 +1,10 @@
-.h1 {
-  font-family: var(--ff-lobster);
-  display: none;
-}
-
-.main {
+main {
   background-color: var(--secondary);
   /* background-image: url('/hero.PNG');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; */
+  text-align: center;
   height: 100svh;
   height: 100vh;
   width: 100%;

@@ -1,0 +1,15 @@
+.ticket-button {
+    --ticket-button-padding: 0.5rem;
+
+    padding: var(--ticket-button-padding);
+    font-weight: 700;
+    font-size: var(--fs-h4);
+    border-radius: 16px;
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.ticket-button:hover {
+    filter: brightness(1.2);
+}

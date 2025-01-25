@@ -57,9 +57,11 @@ a {
 
 h1 {
   font-size: var(--fs-h1);
+  font-family: var(--ff-lobster);
 }
 h2 {
   font-size: var(--fs-h2);
+  font-family: var(--ff-lobster-two);
 }
 h3 {
   font-size: var(--fs-h3);

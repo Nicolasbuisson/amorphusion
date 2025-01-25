@@ -1,25 +1,37 @@
 footer {
-    --footer-padding: 2rem;
+    --footer-padding: 1.5rem;
 
     background-color: var(--primary);
+    color: var(--white);
     padding-block: var(--footer-padding);
-    padding-inline: calc(2 * var(--footer-padding));
+    padding-inline: calc(2  * var(--footer-padding));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .socials-icon-container {
     --icon-size: 24px;
+    --icon-margin-inline: 0.5rem;
 
     display: flex;
     align-items: center;
 }
 
-.flex-column {
-    flex-direction: column;
-}
-
 @media (width > 880px) {
+    footer {
+        --footer-padding: 2rem;
+    }
     .socials-icon-container {
         --icon-size: 32px;
+        --icon-margin-inline: 0.75rem;
     }
 }
 
@@ -27,16 +39,19 @@ footer {
     transition: all .3s ease-in-out;
     border-radius: 100%;
     padding: 0px;
+    margin-inline: var( --icon-margin-inline);
 }
 
 .socials-icon {
-    margin-inline: 0.5rem;
     filter: invert(90%) sepia(28%) saturate(2%) hue-rotate(257deg) brightness(107%) contrast(100%);
     width: var(--icon-size);
     height: var(--icon-size);
     transition: all .3s ease-in-out;
 }
 
+.socials-link:first-of-type {
+    margin-left: 0px;
+}
 /* hover effects */
 .socials-icon:hover {
     transform: scale(1.15);
