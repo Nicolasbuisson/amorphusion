@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Lobster, Lobster_Two } from "next/font/google";
+import { Lobster, Lobster_Two, Luckiest_Guy } from "next/font/google";
 import "./globals.css";
 import "./layout.css";
 
@@ -13,6 +13,12 @@ const lobster = Lobster({
 const lobster_Two = Lobster_Two({
   variable: "--ff-lobster-two",
   weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+const luckiest_Guy = Luckiest_Guy({
+  variable: "--ff-luckiest-guy",
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -29,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lobster.variable} ${lobster_Two.variable}`}>
+      <body
+        className={`${lobster.variable} ${lobster_Two.variable} ${luckiest_Guy.variable}`}
+      >
         {children}
         <footer>
           <div className="socials-container">

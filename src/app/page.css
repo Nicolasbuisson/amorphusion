@@ -1,7 +1,77 @@
 main {
-  background-color: var(--secondary);
-  text-align: center;
-  height: 100svh;
-  height: 100vh;
+  background-color: var(--primary);
+  color: var(--white); 
   width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.rotated {
+  transform: rotate(-22deg);
+}
+
+.hero-image {
+  margin-inline: 1rem;
+  max-width: 300px;
+  max-height: 260px;
+}
+
+.display-none-520 {
+  display: block;
+}
+
+@media (width < 520px) {
+  .display-none-520 {
+    display: none;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-wrap: balance;
+  gap: 1rem;
+  text-align: center;
+  margin-inline: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (width > 520px) {
+  .hero-text {
+    margin-top: 0rem;
+  }
+}
+
+main h2 {
+  color: var(--third);
+}
+
+main h3 {
+  font-family: var(--ff-luckiest-guy);
+  letter-spacing: 3px;
+}
+
+.purple {
+  color: var(--fourth);
+}
+
+.gallery-section {
+  background-color: var(--secondary);
+ padding-block: 2rem;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }

@@ -1,10 +1,28 @@
 .carousel-container {
-    --carousel-item-width: 700px;
+    --carousel-padding-inline: 2rem;
+    --carousel-item-width: calc(100% - var(--carousel-padding-inline));
 
     width: var(--carousel-item-width);
-    padding-block: 2rem;
-    margin: auto;
+    padding-inline: var(--carousel-padding-inline);
     overflow: hidden;
+}
+
+@media (width > 520px) {
+    .carousel-container {
+        --carousel-padding-inline: 3rem;
+    }
+}
+
+@media (width > 880px) {
+    .carousel-container {
+        --carousel-padding-inline: 6rem;
+    }
+}
+
+@media (width > 1280px) {
+    .carousel-container {
+        --carousel-padding-inline: 10rem;
+    }
 }
 
 .carousel-mover {
@@ -14,11 +32,10 @@
 }
 
 .carousel-mover > * {
-    aspect-ratio: 16/9;
     flex-basis: var(--carousel-item-width);
+    aspect-ratio: 16/9;
     flex-grow: 0;
     flex-shrink: 0;
-    border: 2px solid red;
 }
 
 .carousel-mover > *:nth-child(odd) {

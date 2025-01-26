@@ -6,7 +6,7 @@ export const TicketButton = () => {
       href="https://thepointofsale.com/tickets/amorphusionwonderland"
       target="__blank"
     >
-      <button className="ticket-button">BOOK NOW</button>
+      <button className="ticket-button">Book Now</button>
     </a>
   );
 };
