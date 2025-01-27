@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./page.css";
 import { TicketButton } from "@/components/ticketButton/ticketButton";
 import { Carousel } from "@/components/carousel/carousel";
+import { TwitchStream } from "@/components/twitchStream/twitchStream";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
         </div>
       </main>
       <section className="gallery-section">
+        <h2>Moments</h2>
         <Carousel>
           <div>1</div>
           <div>2</div>
@@ -73,6 +75,10 @@ export default function Home() {
           <div>9</div>
           <div>10</div>
         </Carousel>
+      </section>
+      <section className="twitch-section">
+        <h2>Watch us Live</h2>
+        <TwitchStream />
       </section>
     </div>
   );
