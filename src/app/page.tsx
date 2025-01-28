@@ -1,12 +1,12 @@
 import Image from "next/image";
 import "./page.css";
-import { TicketButton } from "@/components/ticketButton/ticketButton";
+import { Button } from "@/components/button/button";
 import { Carousel } from "@/components/carousel/carousel";
 import { TwitchStream } from "@/components/twitchStream/twitchStream";
 
 export default function Home() {
   return (
-    <div>
+    <div className="page-container">
       <main>
         <div className="image-container">
           <Image
@@ -35,7 +35,10 @@ export default function Home() {
             Canada
           </h3>
           <h3 className="purple">SATURDAY FEBRUARY 1ST | 8 PM</h3>
-          <TicketButton />
+          <Button
+            text="Book Now"
+            url="https://thepointofsale.com/tickets/amorphusionwonderland"
+          />
         </div>
         <div className="image-container space-evenly">
           <Image
@@ -79,6 +82,12 @@ export default function Home() {
       <section className="twitch-section">
         <h2>Watch us Live</h2>
         <TwitchStream />
+      </section>
+      <section className="donation-section">
+        <Button
+          text="Donate"
+          url="https://donate.stripe.com/test_8wM2ab5Thatf716288"
+        />
       </section>
     </div>
   );

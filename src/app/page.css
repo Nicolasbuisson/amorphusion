@@ -1,3 +1,7 @@
+.page-container {
+  background-color: var(--primary);
+}
+
 main {
   background-color: var(--primary);
   color: var(--white); 
@@ -78,6 +82,12 @@ section {
 
 .gallery-section {
   background-color: var(--secondary);
+  /* mask created using https://css-generators.com/wavy-shapes */
+  --mask:
+  radial-gradient(42.06px at 50% 57px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+  radial-gradient(42.06px at 50% -37px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 section h2 {
@@ -87,4 +97,15 @@ section h2 {
 .twitch-section {
   background-color: var(--secondary);
   padding-inline: 2rem;
+  padding-bottom: 4rem;
+  /* mask created using https://css-generators.com/wavy-shapes */
+  --mask:
+  radial-gradient(42.06px at 50% calc(100% - 57px),#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+  radial-gradient(42.06px at 50% calc(100% + 37px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.donation-section {
+  background-color: var(--primary);
 }
