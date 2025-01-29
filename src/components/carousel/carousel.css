@@ -4,6 +4,8 @@
 
     width: var(--carousel-item-width);
     padding-inline: var(--carousel-padding-inline);
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 1px var(--black);
     overflow: hidden;
 }
 
@@ -33,6 +35,8 @@
 
 .carousel-mover > * {
     flex-basis: var(--carousel-item-width);
+    max-height: 80svh;
+    max-height: 80vh;
     aspect-ratio: 16/9;
     flex-grow: 0;
     flex-shrink: 0;

@@ -67,16 +67,62 @@ export default function Home() {
       <section className="gallery-section">
         <h2>Moments</h2>
         <Carousel>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>10</div>
+          <Image
+            src="/photos/groupPhoto.png"
+            alt={"picture of Amorphusion band"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/groupPerformance2.png"
+            alt={"picture of Amorphusion band"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/drummers.png"
+            alt={"picture of Amorphusion drummers"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/pianist.png"
+            alt={"picture of Amorphusion pianist"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/bigViolin.png"
+            alt={"picture of Amorphusion muscician"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/groupPerformance.png"
+            alt={"picture of Amorphusion singers"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/flute.png"
+            alt={"picture of Amorphusion flutist"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
+          <Image
+            src="/photos/tibetDrum.png"
+            alt={"picture of Amorphusion drummer"}
+            width={1200}
+            height={675}
+            layout="responsive"
+          ></Image>
         </Carousel>
       </section>
       <section className="twitch-section">
