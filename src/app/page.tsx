@@ -125,17 +125,21 @@ export default function Home() {
           ></Image>
         </Carousel>
       </section>
-      <section className="video-section">
-        <h2>Highlights</h2>
-        <video src="/videos/Candela.MOV" controls />
-        <video src="/videos/Drummers.MOV" controls />
-        <video src="/videos/Salsa.MOV" controls />
+      <section className="about-us-section">
+        <h2>About us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          doloremque quae quaerat veritatis adipisci sint, voluptas accusamus
+          molestiae sunt, voluptatem laborum a fugit! Neque magnam eaque
+          mollitia laborum excepturi possimus?
+        </p>
       </section>
       <section className="twitch-section">
         <h2>Watch us Live</h2>
         <TwitchStream />
       </section>
       <section className="donation-section">
+        <h3>Support us for more future events</h3>
         <Button
           text="Donate"
           url="https://donate.stripe.com/test_8wM2ab5Thatf716288"
