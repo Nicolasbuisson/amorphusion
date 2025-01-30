@@ -125,6 +125,12 @@ export default function Home() {
           ></Image>
         </Carousel>
       </section>
+      <section className="video-section">
+        <h2>Highlights</h2>
+        <video src="/videos/Candela.MOV" controls />
+        <video src="/videos/Drummers.MOV" controls />
+        <video src="/videos/Salsa.MOV" controls />
+      </section>
       <section className="twitch-section">
         <h2>Watch us Live</h2>
         <TwitchStream />

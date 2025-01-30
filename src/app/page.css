@@ -92,6 +92,23 @@ section {
 
 section h2 {
   font-family: var(--ff-lobster-two);
+  color: var(--white);
+}
+
+.video-section {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+video {
+  aspect-ratio: 9/16;
+  max-height: 80svh;
+  max-width: 80vh;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px 1px var(--black);
 }
 
 .twitch-section {
