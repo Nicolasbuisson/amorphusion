@@ -169,7 +169,7 @@ export default function Home() {
           <h3>Support us for more future events</h3>
           <Button
             text="Donate"
-            url="https://donate.stripe.com/test_8wM2ab5Thatf716288"
+            url="https://donate.stripe.com/5kAdSR3fu5Kw88g5kk"
           />
         </div>
       </section>
