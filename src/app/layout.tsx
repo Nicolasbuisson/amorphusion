@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Lobster, Lobster_Two, Luckiest_Guy } from "next/font/google";
 import "./globals.css";
 import "./layout.css";
